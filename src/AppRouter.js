@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import { Navigation } from './components/Navigation';
 import { FrontPage, MyPokemon, SearchPage } from './pages';
 
@@ -16,7 +16,7 @@ export const AppRouter = () => {
 
             <Route path='*' element={<Navigate to='/' />} />
 		</Routes>
-		<Footer/>
+		
 		</>
 	);
 };
