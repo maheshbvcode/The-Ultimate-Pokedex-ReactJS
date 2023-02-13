@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 import { PokeContext } from "../context/PokeContext";
 import { useNavigate } from "react-router-dom";
-
+import pokedex_logo from "../assets/pokedex_logo.png"
 
 export const Navigation = () => {
 	
@@ -27,7 +27,7 @@ const onSearchSubmit = e => {
 			<header className='container'>
 				<Link to='/' className='logo'>
 					<img
-						src='https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png'
+						src={pokedex_logo}
 						alt='Logo'
 					/>
 				</Link>
